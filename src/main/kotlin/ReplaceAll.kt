@@ -1,10 +1,6 @@
 package org.example
 
-data class Player(val id: Int,
-    val matchesPlayed: Int,
-    val totalRuns: Int,
-    val name: String,
-    val team: String)
+
 
 fun main(){
   val playerList = listOf<Player>(
@@ -14,8 +10,8 @@ fun main(){
   )
 
     val updatedPlayers = replaceTeam(playerList, "SRH")
-    updatedPlayers.forEach { player-> println(player) }
+    updatedPlayers.forEach { player-> println(player)}
 }
 fun replaceTeam(list: List<Player>, newTeam: String) : List<Player> {
-     return list.map { player -> player.copy(team = newTeam)  }
+     return list.map { player -> player.copy(team = newTeam)}
 }
