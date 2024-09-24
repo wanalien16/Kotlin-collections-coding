@@ -10,14 +10,15 @@ fun main(){
     val teamToReplace = "DC"
     val newTeam = "SRH"
 
-    val updatedList = replaceNewTeam(playerList, teamToReplace, newTeam)
+//    val updatedList = replaceNewTeam(playerList, teamToReplace, newTeam)
+    val updatedList = replaceNewTeam(playerList)
     updatedList.forEach { println(it) }
 
 }
 
-fun replaceNewTeam(players: List<Player>, oldTeam: String, newTeam: String) : List<Player> {
-    return players.map { player-> if (player.team == oldTeam) {
-        player.copy(team = newTeam)
+fun replaceNewTeam(players: List<Player>) : List<Player> {
+    return players.map { player-> if (player.name == "nagu") {
+        player.copy(name = "anirudh")
     }else
         player
     }
