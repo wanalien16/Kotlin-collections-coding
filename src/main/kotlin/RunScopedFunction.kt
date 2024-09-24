@@ -16,4 +16,8 @@ fun main(){
         address= "ededededededede"
         return@run "the details of Employee: ${displayInfo()}"
     }
+
+    Employee().run {
+         "${displayInfo()}"
+    }
 }
