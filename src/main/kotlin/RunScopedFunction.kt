@@ -8,6 +8,8 @@ class Employee{
         print("name = $name, \n contact is $phone_num, Address is $address")
     }
 }
+//Difference between run and let is run uses this for context whereas let uses it for context which can be renamed in lambda
+//for readability but this in run scope function can not be renamed to any word in lambda
 
 fun main(){
     Employee().run {
