@@ -17,10 +17,7 @@ fun main(){
         this?.name="umesh"
         this?.displayInfo()
     }
-
 //    performRunOperation()
-
-
 }
 //fun performRunOperation() {
 //    val student2: Student? = null
