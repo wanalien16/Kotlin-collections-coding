@@ -14,7 +14,7 @@ fun main(){
   )
 
     val updatedPlayers = replaceTeam(playerList, "SRH")
-    updatedPlayers.forEach { player-> println(player) }
+    updatedPlayers.forEach { player-> println(player)}
 }
 fun replaceTeam(list: List<Player>, newTeam: String) : List<Player> {
      return list.map { player -> player.copy(team = newTeam)  }
